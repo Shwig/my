@@ -2,8 +2,8 @@ FLAGS = -g -std=c99
 objects = myshell.o utility.o
 
 print_list : $(objects)
-	cc -o a $(CFLAGS) $(objects)
+	cc -o myshell $(CFLAGS) $(objects)
 
 .PHONY : clean
 clean :
-	rm a $(objects)
+	rm myshell $(objects)

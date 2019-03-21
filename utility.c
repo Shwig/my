@@ -208,7 +208,7 @@ void execute_cmd(char **parsed_cmds) {
     return;
   } else if (pid == 0) {
     if (execvp(parsed_cmds[0], parsed_cmds) < 0) {
-      printf("\n!%s was not found!\n", parsed_cmds[0]);
+      printf("\n!%s cmd was not found!\n\n", parsed_cmds[0]);
     }
     exit(0);
   } else {

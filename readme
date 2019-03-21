@@ -1,3 +1,34 @@
-## my shell
+## my shell 
 
-/* Comming soon */
+NAME
+      myshell
+
+DESCRIPTION
+      myshell is a custom built interactive command language
+      interpreter that executes commands taken
+      from the standard input. Myshell is also compatible
+      with all basic sh commands currently excluding I/O redirection
+      and piping.
+
+INVOCATION
+      First run the makefile included in the package.
+      when the executable myshell program is invoked from the command line
+      it first sets the env of the shell using the path to the myshell executable.
+      The shell will then remain in interactive mode waiting for user input
+      until the 'quit' command is entered.
+
+BASIC COMMANDS
+      quit - terminate the my_shell program
+
+      clr - clears all previous input from the shell window
+
+      dir - list all contents of current directory
+
+      cd <directory path> - cd without a directory path arg will report the
+      current directory to std_out, adding an arg changes to the input directory path
+
+      environ - lists all of the current environment variables in PATH
+
+      echo <string> - send input string to std out
+
+      help - display all valid commands accepted by my_shell
